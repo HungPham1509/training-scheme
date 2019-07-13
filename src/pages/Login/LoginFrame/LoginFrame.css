@@ -1,0 +1,33 @@
+.Frame {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.Header {
+    margin: 15px;
+}
+
+.Header img {
+    display: inline;
+}
+
+.Header h4 {
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+
+.InputField {
+    margin: 20px;
+}
+
+.Error {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

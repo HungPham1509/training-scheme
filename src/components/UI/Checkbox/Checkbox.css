@@ -1,0 +1,21 @@
+.RememberMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.RememberMe input {
+   display: inline-block;
+}
+
+.RememberMe input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    width: 15px;
+    height: 15px;
+}
+
+.RememberMe label {
+    padding-left: 8px;
+    text-transform: uppercase;
+    margin-bottom: auto;
+}
