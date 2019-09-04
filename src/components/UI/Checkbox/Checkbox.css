@@ -1,21 +1,23 @@
 .RememberMe {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    box-sizing: border-box;
 }
-.RememberMe input {
-   display: inline-block;
+
+.RememberMe > label {
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.7);
 }
+
 
 .RememberMe input[type="checkbox"] {
     -webkit-appearance: checkbox;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
 }
 
-.RememberMe label {
-    padding-left: 8px;
-    text-transform: uppercase;
-    margin-bottom: auto;
-}

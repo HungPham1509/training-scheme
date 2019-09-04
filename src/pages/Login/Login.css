@@ -1,6 +1,9 @@
-.logInBackground {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: white;
+.LoginContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
+
+
+
