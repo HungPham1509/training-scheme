@@ -1,5 +1,4 @@
 import React from 'react';
-import userIcon from '../../../theme/images/specialist-user.png';
 
 import classes from './Input.css';
 

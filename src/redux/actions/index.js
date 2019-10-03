@@ -1,1 +1,4 @@
-export {auth} from './actions';
+export {auth, 
+        authStart, 
+        authFail, 
+        authSuccess} from './auth';

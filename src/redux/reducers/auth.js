@@ -1,21 +1,25 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    isLoggedIn: false,
-    error: null
+    token: null,
+    userId: null,
+    error: null,
+    loading: false,
 }
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case actionTypes.AUTH_START:
             return {
-                ...state
+                ...state,
+                error: null
             }
         case actionTypes.AUTH_SUCCESS:
             return {
                 ...state,
-                isLoggedIn: true,
-                error: null
+                error: null,
+                token: action.idToken,
+                userId: action.userId
             }
         case actionTypes.AUTH_FAIL: 
             return {

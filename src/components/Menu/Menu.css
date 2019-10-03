@@ -1,0 +1,7 @@
+.Menu {
+    background-color: #303641;
+    height: 100%;
+    min-width: 280px;
+    flex: 1 0 280;
+    color: white;
+}
