@@ -3,10 +3,10 @@ import classes from './Checkbox.css'
 
 
 const checkbox = (props) => {
-    return  <div className={classes.RememberMe}>
-                <input type='checkbox' className={classes.cb}/>
-                <label>{props.label}</label>
-            </div>
+    return  <label className={classes.container}>{props.label}
+                <input type='checkbox' onClick={props.clicked}/>
+                <span className={classes.checkmark}></span>
+            </label>
 }
 
 export default checkbox;

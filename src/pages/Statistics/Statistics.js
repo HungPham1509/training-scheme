@@ -2,14 +2,9 @@ import React, {Component} from 'react';
 import Menu from '../../components/Menu/Menu';
 import User from '../../components/User/User';
 
-
 import classes from './Statistics.css';
 
-class UpdateInformation extends Component {
-    handleLogoutClicked = () => {
-            
-    }
-
+class Statistics extends Component {
     render() {
         return <div className={classes.StatisticsContainer}>
                 <Menu />   
@@ -23,4 +18,5 @@ class UpdateInformation extends Component {
     }
 }
 
-export default UpdateInformation;
+
+export default Statistics;

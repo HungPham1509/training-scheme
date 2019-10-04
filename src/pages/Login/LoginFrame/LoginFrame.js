@@ -45,7 +45,14 @@ class LoginFrame extends Component {
                     valid: false 
                 }
             },
+            rememberPassword: false
         }
+    }
+
+    handleCheckBoxClicked = () => {
+        this.setState(prevState => {
+            return {rememberPassword: !prevState.rememberPassword}
+        })
     }
 
     checkInputValidation = (value, rules) => {
@@ -61,7 +68,7 @@ class LoginFrame extends Component {
 
     submitFormHandler = (event) => {
         event.preventDefault();
-        this.props.onAuth(this.state.elements["username"].value, this.state.elements["password"].value);
+        this.props.onAuth(this.state.elements["username"].value, this.state.elements["password"].value, this.state.rememberPassword );
     }
 
     inputChangedHandler = (event, element) => {
@@ -78,20 +85,20 @@ class LoginFrame extends Component {
         })
     }
 
-    resetPasswordIfFail = () => {
-        const updatedElements = {
-            ...this.state.elements,
-            password: {
-                ...this.state.elements["password"],
-                value: ''
-            }
-        }
-        if(this.props.error) {
-            this.setState({
-                elements: updatedElements
-            })
-        }
-    }
+    // resetPasswordIfFail = () => {
+    //     const updatedElements = {
+    //         ...this.state.elements,
+    //         password: {
+    //             ...this.state.elements["password"],
+    //             value: ''
+    //         }
+    //     }
+    //     if(this.props.error) {
+    //         this.setState({
+    //             elements: updatedElements
+    //         })
+    //     }
+    // }
 
 
     render() {
@@ -136,7 +143,7 @@ class LoginFrame extends Component {
                         <label>{constants.LOGIN_LABEL}</label>
                         <i className='sign in icon'/>
                     </Button>
-                    <Checkbox label={constants.REMEMBER_ME_LABEL}/>
+                    <Checkbox label={constants.REMEMBER_ME_LABEL} clicked={this.handleCheckBoxClicked}/>
                     <div className={classes.fw}>{constants.FORGOT_PASSWORD}</div>
                 </form>
             </div>
@@ -152,7 +159,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAuth: (username, password) => dispatch(actions.auth(username, password))
+        onAuth: (username, password, rememberPassword) => dispatch(actions.auth(username, password, rememberPassword))
     }
 }
 

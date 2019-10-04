@@ -1,4 +1,8 @@
 export {auth, 
         authStart, 
         authFail, 
-        authSuccess} from './auth';
+        authSuccess,
+        authLogout,
+        logOutSucceed,
+        authCheckState,
+        checkAuthTimeOut} from './auth';

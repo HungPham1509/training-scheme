@@ -7,7 +7,7 @@ export const PASSWORD_LABEL = 'Password';
 export const FORGOT_PASSWORD = 'Forgot your password?';
 export const TITLE = 'Training Program Management System';
 export const LOGIN_LABEL = 'Login';
-export const REMEMBER_ME_LABEL = 'Remember password';
+export const REMEMBER_ME_LABEL = 'Remember Password';
 
 export const UNIVERSITY = '© 2017 Trường Đại học Công nghệ, Đại học Quốc Gia Hà Nội';
 export const ADDRESS = 'Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội';
