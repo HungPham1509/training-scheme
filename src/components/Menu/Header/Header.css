@@ -1,0 +1,39 @@
+.MenuHeader {
+    display: flex;
+    padding: 35px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 0.5px solid #AAABAE;
+}
+
+.Logo {
+    display: flex;
+    color: #AAABAE;
+    font-size: 12px;
+}
+
+.Logo img {
+    flex: 1 0 34px;
+}
+
+.ToggleButton {
+    flex: 1 0 36px;
+    background-color: #303641;
+    border: 1px solid #AAABAE;
+    border-radius: 2px;
+    box-shadow: 0.5px 0.5px #AAABAE;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.ToggleButton div {
+    width: 20px;
+    height: 4px;
+    background-color: #AAABAE;
+    align-self: center;
+}
+
+
+

@@ -1,5 +1,5 @@
 export const USERNAME = 'admin';
-export const PASSWORD = '12345678';
+export const PASSWORD = 'admin';
 
 export const USERNAME_LABEL = 'Username';
 export const PASSWORD_LABEL = 'Password';
@@ -14,3 +14,5 @@ export const ADDRESS = 'Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà N�
 export const PHONE_FAX_EMAIL = 'Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn';
 
 export const FAILED_TO_LOGIN = 'Failed to login';
+
+export const MENU_HEADER = 'Training Program Management System';

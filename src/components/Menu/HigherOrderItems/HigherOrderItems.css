@@ -1,0 +1,26 @@
+.container {
+    background-color: #303641;
+    border-top: 0.5px solid #AAABAE;
+    border-bottom: 0.5px solid #AAABAE;
+    box-sizing: border-box;
+    width: 100%;
+    height: 41px;
+    color: #AAABAE;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.container > i {
+    color: #AAABAE;
+    flex: 0 0 12px;
+    height: 12px;
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #AAABAE;
+}
