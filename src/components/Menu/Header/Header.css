@@ -1,14 +1,13 @@
 .MenuHeader {
     display: flex;
-    padding: 35px;
+    padding: 35px 25px;
     box-sizing: border-box;
     width: 100%;
-    border-bottom: 0.5px solid #AAABAE;
 }
 
 .Logo {
     display: flex;
-    color: #AAABAE;
+    color: #949494;
     font-size: 12px;
 }
 
@@ -19,19 +18,19 @@
 .ToggleButton {
     flex: 1 0 36px;
     background-color: #303641;
-    border: 1px solid #AAABAE;
+    border: 1px solid #949494;
     border-radius: 2px;
-    box-shadow: 0.5px 0.5px #AAABAE;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: space-evenly;
+    margin-right: 5px;
 }
 
 .ToggleButton div {
     width: 20px;
     height: 4px;
-    background-color: #AAABAE;
+    background-color: #949494;
     align-self: center;
 }
 

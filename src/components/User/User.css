@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
 }
 
 .User {
@@ -31,14 +32,19 @@
     font-size: 12px;
     border: none;
     padding: 0;
+    text-transform: uppercase;
 }
 
-.Logout > i {
-    margin-top: 1px;
-    margin-left: 4px;
-    margin-right: 0;
+.Logout > img {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    margin-top: 2px;
 }
 
 .Logout:hover {
     color: #ff4e50;
 }
+
+
+

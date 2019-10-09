@@ -10,6 +10,7 @@ import thunk from 'redux-thunk';
 
 
 import App from './App';
+import classes from './index.css';
 import * as serviceWorker from './serviceWorker';
 
 

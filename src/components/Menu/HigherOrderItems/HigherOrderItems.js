@@ -1,19 +1,71 @@
-import React from 'react'
-
+import React, {Component} from 'react'
+import {NavLink} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
+import Item from './Item/Item';
 import classes from './HigherOrderItems.css';
 
-const higherOrderItems = (props) => {
-    let activeStyle = null;
-    if(props.link) {
-        activeStyle = {
-            backgroundColor: '#2B303A',
-            color: '#fff',
+class HigherOrderItems extends Component {
+    render() {
+        const items = this.props.items;
+        let listItems = null;
+        if(items) {
+            listItems = items.map(item => {
+                if(this.props.toggleOn) {
+                     return <Item key={item.label} label={item.label} link={item.url} />
+                }
+                else {
+                    return;
+                }
+            })
         }
+        let list = null;
+        let toggleIcon = null;
+        if(this.props.label!=='Thống Kê') {
+            list = <ul className={classes.itemsContainer}>
+                        {listItems}
+                   </ul>
+            if(!this.props.toggleOn) {
+                toggleIcon = <a className={classes.Toggle} >
+                                <FontAwesomeIcon icon={faChevronDown} rotation={270} style={{fontSize: '15px'}}/>
+                             </a>
+            }
+            else {
+                toggleIcon = <a className={classes.Toggle}>
+                                <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '15px'}}/>
+                             </a>
+            }
+        }
+        
+        let higherOrderItem = null;
+        if(this.props.label === 'Thống Kê') {
+            higherOrderItem = <NavLink to='/statistics' className={classes.container}>
+                                <div className={classes.Label}>
+                                    <img src={this.props.icon} alt='icon'/>    
+                                    <div>{this.props.label}</div>
+                                </div>
+                                {toggleIcon}
+                              </NavLink>
+           
+        }
+        else {
+            higherOrderItem = <div className={classes.container} onClick={this.props.clicked}>
+                                <div className={classes.Label}>
+                                    <img src={this.props.icon} alt='icon'/>    
+                                    <div>{this.props.label}</div>
+                                </div>
+                                {toggleIcon}
+                              </div>
+        }
+        
+        return (
+            <li>
+                {higherOrderItem}
+                {list}
+            </li>
+        )
     }
-    return <a href='#' className={classes.container} style={activeStyle}>
-        <i className={props.icon} style={activeStyle}/>
-        <div>{props.label}</div>
-    </a>
+    
 }
 
-export default higherOrderItems;
+export default HigherOrderItems;

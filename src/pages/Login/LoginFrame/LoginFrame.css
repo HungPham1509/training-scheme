@@ -44,6 +44,7 @@
 .InputElement > input::placeholder {
     color: #949494;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .ButtonElement {
@@ -61,12 +62,14 @@
 .ButtonElement > label {
     margin-bottom: 0;
     margin-left: 10px;
+    text-transform: uppercase;
 }
 
-.ButtonElement > i {
+.ButtonElement > img {
     width: 14px;
     height: 14px;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 
 .ButtonElement:hover {

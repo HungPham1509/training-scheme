@@ -5,6 +5,7 @@ import Button from '../../../components/UI/Button/Button';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 
+import logInIcon from '../../../theme/svg/login-square-arrow-button-outline.svg';
 import * as actions from '../../../redux/actions/index';
 import * as constants from '../../../constants/string';
 import classes from './LoginFrame.css';
@@ -141,7 +142,7 @@ class LoginFrame extends Component {
                     {form}
                     <Button class={classes.ButtonElement}>
                         <label>{constants.LOGIN_LABEL}</label>
-                        <i className='sign in icon'/>
+                        <img src={logInIcon} alt='icon'/>
                     </Button>
                     <Checkbox label={constants.REMEMBER_ME_LABEL} clicked={this.handleCheckBoxClicked}/>
                     <div className={classes.fw}>{constants.FORGOT_PASSWORD}</div>

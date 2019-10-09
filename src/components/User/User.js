@@ -4,6 +4,7 @@ import Button from '../UI/Button/Button';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 
+import logoutIcon from '../../theme/svg/logout.svg';
 import * as actions from '../../redux/actions/index';
 import classes from './User.css'
 
@@ -11,6 +12,8 @@ class User extends Component {
     handleLogoutClicked = () => {
         this.props.onLogout();
     }
+
+
     render() {
         let authRedirect = null;
         if(!this.props.isAuthenticated) {
@@ -25,7 +28,7 @@ class User extends Component {
                     </div>
                     <Button class={classes.Logout} clicked={this.handleLogoutClicked}>
                             Log Out
-                            <i className='sign-out alternate icon'/>
+                            <img src={logoutIcon} alt='logout'/>
                     </Button>
             </div> 
         )

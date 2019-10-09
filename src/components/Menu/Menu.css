@@ -1,10 +1,16 @@
 .Menu {
     background-color: #303641;
     height: 100%;
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 260px;
+    max-width: 260px;
     flex: 1 0 0;
     color: white;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
+.Menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
