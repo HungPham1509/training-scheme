@@ -1,4 +1,4 @@
-import LineChart from '../theme/svg/account.svg';
+import LineChart from '../theme/svg/line-chart.svg';
 import Clipboard from '../theme/svg/clipboards.svg';
 import Course from '../theme/svg/language.svg';
 import Icon from '../theme/svg/icon.svg';

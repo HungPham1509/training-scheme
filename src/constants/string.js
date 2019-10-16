@@ -8,7 +8,7 @@ export const FORGOT_PASSWORD = 'Forgot your password?';
 export const TITLE = 'Training Program Management System';
 export const LOGIN_LABEL = 'Login';
 export const REMEMBER_ME_LABEL = 'Remember Password';
-
+// login page
 export const UNIVERSITY = '© 2017 Trường Đại học Công nghệ, Đại học Quốc Gia Hà Nội';
 export const ADDRESS = 'Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội';
 export const PHONE_FAX_EMAIL = 'Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn';
