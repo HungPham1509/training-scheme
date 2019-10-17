@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import {Provider} from 'react-redux'
-import {createStore, compose, applyMiddleware} from 'redux';
+import {createStore, compose, applyMiddleware, combineReducers} from 'redux';
 import CreateSagaMiddleware from 'redux-saga';
-import reducer from './redux/reducers/auth';
+import authReducer from './redux/reducers/auth';
+import accountsReducer from './redux/reducers/accounts';
 import {watchAuth} from './redux/saga/index';
 import thunk from 'redux-thunk';
 
@@ -19,7 +20,12 @@ const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX
 
 const sagaMiddleware = CreateSagaMiddleware();
 
-const store = createStore(reducer, composeEnhancers(
+const rootReducer = combineReducers({
+    auth: authReducer,
+    accounts: accountsReducer
+})
+
+const store = createStore(rootReducer, composeEnhancers(
     applyMiddleware(thunk, sagaMiddleware)
 ));
 

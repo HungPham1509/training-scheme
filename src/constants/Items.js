@@ -6,6 +6,7 @@ import Institution from '../theme/svg/university-building.svg';
 import Accounts from '../theme/svg/account.svg';
 import Hash from '../theme/svg/hashtag.svg';
 
+// Menu items
 
 export const statistic = {
     label: 'Thống Kê',
@@ -41,3 +42,24 @@ export const others = {
     icon: Hash,
     items: [{label: 'Ngành', url: '/majors'}, {label: 'Văn bản', url: '/texts'}]
 }
+
+// Accounts 
+
+export const test = [
+    {
+        fullName: 'Nguyễn Văn A',
+        role: 'Sinh viên',
+        institution: 'Đại học công nghệ',
+        phoneNumber: '012345678',
+        major: 'Công nghệ thông tin',
+        vnuMail: 'abc@vnu.edu.vn'
+    },
+    {
+        fullName: 'Lê Văn B',
+        role: 'Giảng viên',
+        institution: 'Đại học công nghệ',
+        phoneNumber: '045645678',
+        major: 'Điện tử viễn thông',
+        vnuMail: 'def@vnu.edu.vn'
+    }
+]

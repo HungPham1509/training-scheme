@@ -11,8 +11,6 @@ class Statistics extends Component {
                         Thống kê
                     </div>
                 </div>
-                
-
     }
 }
 
