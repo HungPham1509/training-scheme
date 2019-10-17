@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import User from '../../components/User/User';
 import Account from './Account/Account';
+import prevIcon from '../../theme/svg/prev.svg';
+import nextIcon from '../../theme/svg/next.svg';
 import {connect} from 'react-redux';
 import * as actions from '../../redux/actions/index';
 
@@ -18,12 +20,23 @@ class Accounts extends Component {
                             institution={acc.institution}
                             phoneNumber={acc.phoneNumber}
                             major={acc.major}
-                            vnuMail={acc.vnuMail}/>
+                            vnuMail={acc.vnuMail}
+                            avatar={acc.avatar}/>
         })
         return  <div className={classes.Accounts}>
                     <User />
-                    <div>
+                    <div className={classes.accountsContainer}>
                         {accs}
+                    </div>
+                    <div className={classes.Buttons}>
+                            <button>
+                                <img src={prevIcon} alt='icon'  className={classes.prev}/>
+                                Previous
+                            </button>
+                            <button>
+                                Next
+                                <img src={nextIcon} alt='icon' className={classes.next}/>
+                            </button>
                     </div>
                 </div>
     }

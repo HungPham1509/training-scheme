@@ -5,6 +5,7 @@ import Icon from '../theme/svg/icon.svg';
 import Institution from '../theme/svg/university-building.svg';
 import Accounts from '../theme/svg/account.svg';
 import Hash from '../theme/svg/hashtag.svg';
+import Avatar from '../theme/svg/avatar.svg';
 
 // Menu items
 
@@ -47,6 +48,7 @@ export const others = {
 
 export const test = [
     {
+        avatar: Avatar,
         fullName: 'Nguyễn Văn A',
         role: 'Sinh viên',
         institution: 'Đại học công nghệ',
@@ -55,6 +57,7 @@ export const test = [
         vnuMail: 'abc@vnu.edu.vn'
     },
     {
+        avatar: Avatar,
         fullName: 'Lê Văn B',
         role: 'Giảng viên',
         institution: 'Đại học công nghệ',

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import roleIcon from '../../../theme/svg/role.svg'
-import avatar from '../../../theme/svg/avatar.svg';
 import briefCase from '../../../theme/svg/briefcase.svg';
 import cap from '../../../theme/svg/cap.svg';
 import phone from '../../../theme/svg/phone.svg';
@@ -10,7 +9,7 @@ import classes from './Account.css';
 
 const account = (props) => {
     return <div className={classes.Account}>
-        <img src={avatar} alt='icon'></img>
+        <img src={props.avatar} alt='icon'></img>
         <div className={classes.Info}>
             <p>{props.fullname}</p>
             <table>
