@@ -1,12 +1,79 @@
 .AddInstitutionsContainer {
-    height: 100vh;
-    display: flex;
-    box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .AddInstitutions {
-    flex: 3 0 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.AddInstitutionsLink {
+  font-size: 13px;
+  padding-top: 20px;
+  width: 386px;
+  height: 17px;
+}
+
+.AddInstitutionsForm {
+  padding-top: 55px;
+  width: 1120px;
+  height: 776px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormLabel {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.InputText {
+  font-size: 13px;
+  margin-top: 15px;
+  width: 350px;
+}
+
+.InputText input {
+  width: 200px;
+  float: right;
+  border: 1px solid burlywood;
+}
+
+.address {
+  width: 200px;
+  height: 70px;
+}
+
+.description {
+  width: 1080px;
+  height: 235px;
+}
+
+.logo {
+  width: 100px;
+  height: 200px;
+}
+
+.btnSubmit {
+  width: 88px;
+  height: 29px;
+  border: 1px solid black;
+}
+
+.btnCancel {
+  width: 88px;
+  height: 29px;
+  margin-left: 850px;
+  border: 1px solid black;
+}
+
+.display {
+  margin-top: 20px;
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
 }
