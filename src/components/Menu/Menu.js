@@ -36,26 +36,74 @@ class Menu extends Component {
                 ...items.others,
                 toggleOn: false,
             }
-        }
+        },
+        collapsed: false
+    }
+
+    collapsedSidebarHandler = () => {
+        this.setState(prevState => {
+            return {
+                collapsed: !prevState.collapsed
+            }
+        })
     }
 
     ToggleItemHandler = (itemLabel) => {
         const temp = {
             ...this.state.higherOrderItems
         };
+
         for(let item in temp) {
             let tempToggle = temp[item].toggleOn;
             if(temp[item].label === itemLabel) {
                 temp[item].toggleOn = !tempToggle;
             }
             else {
-                temp[item].toggleOn = false
+                temp[item].toggleOn = false;
             }
         }
         this.setState({
             higherOrderItems: temp
         })
     }
+
+    onMouseOverHandler = (itemLabel) => {
+        if(this.state.collapsed) {
+            const temp = {
+                ...this.state.higherOrderItems
+            };
+    
+            for(let item in temp) {
+                if(temp[item].label === itemLabel) {
+                    temp[item].toggleOn = true;
+                }
+                else {
+                    temp[item].toggleOn = false;
+                }
+            }
+            this.setState({
+                higherOrderItems: temp
+            })
+        }
+    }
+
+    onMouseOutHandler = (itemLabel) => {
+        if(this.state.collapsed) {
+            const temp = {
+                ...this.state.higherOrderItems
+            };
+    
+            for(let item in temp) {
+                if(temp[item].label === itemLabel) {
+                    temp[item].toggleOn = false;
+                }
+            }
+            this.setState({
+                higherOrderItems: temp
+            })
+        }
+    }
+
 
     render() {
         const Items = [];
@@ -71,16 +119,29 @@ class Menu extends Component {
                                     icon={item['properties'].icon}
                                     items={item['properties'].items}
                                     toggleOn={item['properties'].toggleOn}
-                                    clicked = {() => this.ToggleItemHandler(item['properties'].label)} />
+                                    clicked={() => this.ToggleItemHandler(item['properties'].label)}
+                                    collapsed={this.state.collapsed}
+                                    onMouseOver={() => this.onMouseOverHandler(item['properties'].label)}
+                                    onMouseOut={() => this.onMouseOutHandler(item['properties'].label)}/>
         })
-        return (<nav className={classes.Menu}>
-            <Header />
-            <ul>
-                {HOIs}
-            </ul>
-        </nav>)
-    }
-    
+
+        let menu = (!this.state.collapsed) ? <nav className={classes.Menu}>
+                                                    <Header clicked={this.collapsedSidebarHandler} collapsed={this.state.collapsed}/>
+                                                    <ul>
+                                                        {HOIs}
+                                                    </ul>
+                                            </nav>
+                                          : <nav className={classes.MenuOff}>
+                                                    <Header clicked={this.collapsedSidebarHandler} collapsed={this.state.collapsed}/>
+                                                    <ul>
+                                                        {HOIs}
+                                                    </ul>
+                                            </nav>
+             
+        return <div>
+            {menu}
+        </div>
+    } 
 }
 
 

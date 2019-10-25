@@ -1,9 +1,3 @@
-.AddTrainingProgramContainer {
-    height: 100vh;
-    display: flex;
-    box-sizing: border-box;
-}
-
 .AddTrainingProgram {
     flex: 3 0 0;
     padding: 0 20px;

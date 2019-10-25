@@ -1,9 +1,14 @@
+// <<<<<<< HEAD
 import React, { Component } from "react";
 import Menu from "../../components/Menu/Menu";
 import User from "../../components/User/User";
 import * as constants from "../../constants/string";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSave, faWindowClose } from "@fortawesome/free-solid-svg-icons";
+// =======
+// import React, {Component} from 'react';
+// import User from '../../components/User/User';
+// >>>>>>> login-page
 
 import classes from "./AddInstitutions.css";
 
@@ -49,7 +54,6 @@ class AddInstitutions extends Component {
   render() {
     return (
       <div className={classes.AddInstitutionsContainer}>
-        <Menu />
         <div className={classes.AddInstitutions}>
           <User />
 
