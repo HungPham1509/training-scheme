@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Input from '../../../components/UI/Input/Input';
 import Checkbox from '../../../components/UI/Checkbox/Checkbox';
-import Button from '../../../components/UI/Button/Button';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 
@@ -43,7 +42,7 @@ class LoginFrame extends Component {
                         required: true,
                         noWhiteSpace: true 
                     },
-                    valid: false 
+                    valid: false
                 }
             },
             rememberPassword: false
@@ -140,10 +139,10 @@ class LoginFrame extends Component {
                 <form onSubmit={this.submitFormHandler}>
                     {message}
                     {form}
-                    <Button class={classes.ButtonElement}>
+                    <button className={classes.ButtonElement}>
                         <label>{constants.LOGIN_LABEL}</label>
                         <img src={logInIcon} alt='icon'/>
-                    </Button>
+                    </button>
                     <Checkbox label={constants.REMEMBER_ME_LABEL} clicked={this.handleCheckBoxClicked}/>
                     <div className={classes.fw}>{constants.FORGOT_PASSWORD}</div>
                 </form>

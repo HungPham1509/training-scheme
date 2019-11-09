@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import UserImage from '../../theme/images/user.png';
-import Button from '../UI/Button/Button';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 
@@ -26,10 +25,10 @@ class User extends Component {
                         <img src={UserImage} alt={'user'}/>
                         <p>Admin</p>
                     </div>
-                    <Button class={classes.Logout} clicked={this.handleLogoutClicked}>
+                    <button className={classes.Logout} onClick={this.handleLogoutClicked}>
                             Log Out
                             <img src={logoutIcon} alt='logout'/>
-                    </Button>
+                    </button>
             </div> 
         )
     }

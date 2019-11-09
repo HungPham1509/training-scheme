@@ -6,6 +6,7 @@ import Institution from '../theme/svg/university-building.svg';
 import Accounts from '../theme/svg/account.svg';
 import Hash from '../theme/svg/hashtag.svg';
 import Avatar from '../theme/svg/avatar.svg';
+import Avatar2 from '../theme/svg/avatar2.svg';
 
 // Menu items
 
@@ -48,21 +49,71 @@ export const others = {
 
 export const test = [
     {
-        avatar: Avatar,
+        id: 'dsad',
+        avatar: Avatar2,
         fullName: 'Nguyễn Văn A',
         role: 'Sinh viên',
         institution: 'Đại học công nghệ',
         phoneNumber: '012345678',
-        major: 'Công nghệ thông tin',
-        vnuMail: 'abc@vnu.edu.vn'
+        faculty: 'Công nghệ thông tin',
+        vnuMail: 'abc@vnu.edu.vn',
+        birthday: '12/3/1999',
+        email: 'abc@gmail.com',
+        studentCode: '123456789',
+        major: 'KHMT',
+        majorCode: '74B01D1',
+        year: 'K62',
+        class: 'CLC',
+        note: 'Hello World'
     },
     {
+        id: 'fdgd',
+        avatar: Avatar,
+        fullName: 'Phạm Văn C',
+        role: 'Sinh viên',
+        institution: 'Đại học công nghệ',
+        phoneNumber: '012345678',
+        faculty: 'Công nghệ thông tin',
+        vnuMail: 'abc@vnu.edu.vn',
+        birthday: '17/5/1999',
+        email: 'abc@gmail.com',
+        studentCode: '123456789',
+        major: 'KHMT',
+        majorCode: '74B01D1',
+        year: 'K62',
+        class: 'CLC',
+        note: 'Hello World'
+    },
+    {
+        id: 'bgfd',
+        avatar: Avatar,
+        fullName: 'Lê K',
+        role: 'Sinh viên',
+        institution: 'Đại học công nghệ',
+        phoneNumber: '012345678',
+        faculty: 'Công nghệ thông tin',
+        vnuMail: 'abc@vnu.edu.vn',
+        birthday: '15/9/1999',
+        email: 'abc@gmail.com',
+        studentCode: '123456789',
+        major: 'KHMT',
+        majorCode: '74B01D1',
+        year: 'K62',
+        class: 'CLC',
+        note: 'Hello World'
+    },
+    {
+        id: 'wrte',
         avatar: Avatar,
         fullName: 'Lê Văn B',
         role: 'Giảng viên',
+        academicRank: 'Phó giáo sư',
+        degree: 'Tiến sĩ',
         institution: 'Đại học công nghệ',
         phoneNumber: '045645678',
-        major: 'Điện tử viễn thông',
-        vnuMail: 'def@vnu.edu.vn'
+        faculty: 'Điện tử viễn thông',
+        vnuMail: 'def@vnu.edu.vn',
+        email: 'dsa@gmail.com',
+        note: 'Hello world'
     }
 ]

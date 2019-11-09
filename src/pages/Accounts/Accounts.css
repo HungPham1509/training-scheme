@@ -22,7 +22,9 @@
 
 .Buttons > button {
     margin: 0.5px;
-    padding: 3px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .Buttons > button:first-child {
@@ -40,3 +42,10 @@
     padding: 0 5px 0 10px;
 }
 
+.mess {
+    padding-top: 30px;
+    color: #303641;
+    align-self: flex-start;
+    margin-left: 20px;
+    font-size: 14px;
+}

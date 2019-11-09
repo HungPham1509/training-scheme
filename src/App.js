@@ -21,6 +21,7 @@ import AddAccount from '../src/pages/AddAccount/AddAccount';
 import Majors from '../src/pages/Majors/Majors';
 import Texts from '../src/pages/Texts/Texts';
 import Menu from './components/Menu/Menu';
+import AccountDetails from './pages/Accounts/Account/AccountDetails/AccountDetails';
 
 class App extends Component {
     componentDidMount() {
@@ -50,7 +51,8 @@ class App extends Component {
                                                       <Route path='/accounts' exact component={Accounts} />
                                                       <Route path='/accounts/add' component={AddAccount} />
                                                       <Route path='/majors' component={Majors} />
-                                                      <Route path='/texts' component={Texts} /> 
+                                                      <Route path='/texts' component={Texts} />
+                                                      <Route path='/accounts/:id' component={AccountDetails}/> 
                                                     </Switch>
                                                   </div>
         return  <div>

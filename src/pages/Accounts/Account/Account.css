@@ -11,10 +11,16 @@
     color: #373E43;
 }
 
+.Account:hover, .Account:active {
+    text-decoration: none;
+    color: #373E43;
+}
+
 .Account > img {
     margin: 10px 30px 10px 10px;
     width: 85px;
     height: 85px;
+    border-radius: 50%;
 }
 
 .Info {
