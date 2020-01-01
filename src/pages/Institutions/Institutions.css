@@ -1,6 +1,30 @@
 .Institutions {
-    flex: 3 0 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+.InstitutionsLink {
+  font-size: 13px;
+  padding-top: 20px;
+  width: 386px;
+  height: 17px;
+}
+
+.SchoolListLabel {
+  font-size: 20px;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+}
+
+.SelectSchool {
+  font-size: 15px;
+  margin-left: 15px;
 }

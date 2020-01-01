@@ -32,3 +32,4 @@ export const MENU_HEADER = "Training Program Management System";
 
 // Institutions
 export const ADD_INSTITUTIONS = "TẠO MỚI ĐƠN VỊ CHUYÊN MÔN";
+export const LIST_SCHOOL = "TRƯỜNG THÀNH VIÊN";
