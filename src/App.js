@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom'
+import {Route, Switch, Redirect, withRouter} from 'react-router-dom'
 import Login from '../src/pages/Login/Login';
 import {connect} from 'react-redux';
 import classes from './App.css';
@@ -24,6 +24,9 @@ import Menu from './components/Menu/Menu';
 import AccountDetails from './pages/Accounts/Account/AccountDetails/AccountDetails';
 
 class App extends Component {
+    componentWillMount(){
+      this.props.onSetAuthPath(this.props.location.pathname);
+    }
     componentDidMount() {
         this.props.onTryAutoSignUp();
     }
@@ -69,8 +72,9 @@ const mapStateToProps = state => {
   
   const mapDispatchToProps = dispatch => {
     return {
-      onTryAutoSignUp: () => dispatch(actions.authCheckState())
+      onTryAutoSignUp: () => dispatch(actions.authCheckState()),
+      onSetAuthPath: (path) => dispatch(actions.setAuthRedirectPath(path))
     }
   }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

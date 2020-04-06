@@ -5,7 +5,8 @@ export {auth,
         authLogout,
         logOutSucceed,
         authCheckState,
-        checkAuthTimeOut} from './auth';
+        checkAuthTimeOut,
+        setAuthRedirectPath} from './auth';
 
 export {
         fetchAccountsStart,
