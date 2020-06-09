@@ -29,7 +29,7 @@ export function* authUserSaga(action) {
             yield cookies.set('expirationDate', expirationDate, {path: '/'});
             yield cookies.set('token', token, {path: '/'});
             yield cookies.set('userID', userId, {path: '/'});
-            yield put(actions.checkAuthTimeOut(3600));
+            yield put(actions.checkAuthTimeOut(360000));
         }
         yield put(actions.authSuccess(token, userId));
     }
