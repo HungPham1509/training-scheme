@@ -104,7 +104,7 @@ class LoginFrame extends Component {
     render() {
         let authRedirect = null;
         if(this.props.isAuthenticated) {
-            authRedirect = <Redirect to='/accounts'/>
+            authRedirect = <Redirect to={this.props.authPath}/>
         }
         let message = null;
         if(this.props.error) {
@@ -153,7 +153,8 @@ class LoginFrame extends Component {
 const mapStateToProps = state => {
     return {
         isAuthenticated: state.auth.token !== null,
-        error: state.auth.error
+        error: state.auth.error,
+        authPath: state.auth.authPath
     }
 }
 
