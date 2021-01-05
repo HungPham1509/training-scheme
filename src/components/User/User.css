@@ -1,50 +1,47 @@
 .UserContainer {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
 }
 
 .User {
-    display: flex;
-    padding: 20px 0 30px 0;
+  display: flex;
+  padding: 20px 0 30px 0;
 }
 
 .User img {
-    height: 44px;
-    width: 44px;
-    margin-right: 5px;
+  height: 44px;
+  width: 44px;
+  margin-right: 5px;
 }
 
 .User p {
-    align-self: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.7)
+  align-self: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .Logout {
-    display: flex;
-    align-self: center;
-    margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: #fff;
-    font-size: 12px;
-    border: none;
-    padding: 0;
-    text-transform: uppercase;
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #fff;
+  font-size: 12px;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .Logout > img {
-    width: 12px;
-    height: 12px;
-    margin-left: 3px;
-    margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
+  margin-top: 2px;
 }
 
 .Logout:hover {
-    color: #ff4e50;
+  color: #ff4e50;
 }
-
-
-

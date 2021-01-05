@@ -1,6 +1,17 @@
 .AddInstitutions {
-    flex: 3 0 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText {
+  margin-top: 30px;
+}
+
+.formHeaderLine {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 15px;
 }

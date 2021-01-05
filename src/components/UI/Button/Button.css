@@ -1,34 +1,52 @@
 .Button {
-    background-color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 12px;
-    color: #57565C;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 2px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    line-height: 19px;
-    height: 29px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  color: #57565c;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: 19px;
+  height: 29px;
 }
 
 .Cancel {
-    width: 88px;
-    padding: 0;
-    padding-right: 10px;
+  width: 88px;
+  padding: 0;
+  padding-right: 10px;
 }
 
 .Cancel img {
-    margin-right: 10px;
-    margin-bottom: 1px;
+  margin-right: 10px;
+  margin-bottom: 1px;
 }
 
 .Save {
-    width: 74px;
-    padding: 0;
-    padding-left: 10px;
+  width: 74px;
+  padding: 0;
+  padding-left: 10px;
 }
 
 .Save img {
-    margin-bottom: 1px;
-    margin-left: 10px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+.InlineTable {
+  display: flex;
+  align-items: center;
+  width: 88px;
+  padding-left: 6px;
+}
+
+.AddButton {
+  color: white;
+  background-color: #373e43;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+  width: 120px;
+  height: 38px;
 }

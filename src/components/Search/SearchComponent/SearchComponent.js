@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import searchIcon from "../../theme/svg/search.svg";
-import * as constants from "../../constants/string";
-import classes from "./Search.css";
+import searchIcon from "../../../theme/svg/search.svg";
+import * as constants from "../../../constants/string";
+import classes from "./SearchComponent.css";
 
 const searchBar = (props) => {
   let numOfMods = 0;
@@ -27,15 +27,6 @@ const searchBar = (props) => {
   return (
     <div className={classes.SearchBar}>
       <div className={classes.FilterButtons}>
-        <button onClick={() => props.filterClicked(constants.MODERATOR)}>
-          {constants.MODERATOR} ({numOfMods})
-        </button>
-        <button onClick={() => props.filterClicked(constants.LECTURER)}>
-          {constants.LECTURER} ({numOfLecturers})
-        </button>
-        <button onClick={() => props.filterClicked(constants.STUDENT)}>
-          {constants.STUDENT} ({numOfStudents})
-        </button>
         <button onClick={() => props.filterClicked(constants.ALL)}>
           {constants.ALL} ({props.accounts.length})
         </button>

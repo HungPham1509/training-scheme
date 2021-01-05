@@ -1,12 +1,82 @@
 .MajorsContainer {
-    height: 100vh;
-    display: flex;
-    box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .Majors {
-    flex: 3 0 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText {
+  margin-top: 30px;
+}
+
+.Table {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.Table td,
+th {
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 0px;
+}
+
+table {
+  table-layout: fixed;
+  color: #a6a7aa;
+}
+
+.tr1 {
+  /* height: 40px; */
+  background-color: #373e43;
+}
+
+.td1 {
+  text-align: center;
+  width: 50px !important;
+}
+.td2 {
+  text-align: center;
+  width: 298px;
+}
+.td3 {
+  text-align: center;
+  width: 226px;
+}
+.td4 {
+  text-align: center;
+  width: 196px;
+}
+.td5 {
+  text-align: center;
+  width: 350px;
+}
+
+.ButtonList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Pagination {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 1340px;
+}
+
+.Modal {
+  width: 592px;
+  height: 496px;
 }

@@ -1,6 +1,45 @@
 .Texts {
-    flex: 3 0 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText {
+  margin-top: 30px;
+}
+
+.Buttons {
+  margin-bottom: 30px;
+  margin-top: 60px;
+  align-self: center;
+  font-size: 12px;
+  color: #333333;
+}
+
+.Pagination {
+  /* position: absolute; */
+  margin-top: 10px;
+  margin-left: 670px;
+}
+
+.UnitContainer {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+
+.tr {
+  height: 260px;
+  text-align: center;
+  border: none;
+  padding: 0px;
+}
+
+.td {
+  padding-right: 40px;
+  width: 500px;
+  text-align: center;
+  border: none;
+  padding: 11px 0 !important;
 }
